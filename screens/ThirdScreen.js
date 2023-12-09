@@ -118,7 +118,7 @@ const RegistrationScreen = () => {
                 autoCapitalize="none"
                 autoCorrect={false}
                 autoCompleteType= "password"
-                keyboardType="visible-password"
+                keyboardType="default"
                 placeholder="password"
                 secureTextEntry = {true}
               />
