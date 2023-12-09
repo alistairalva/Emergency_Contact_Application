@@ -86,46 +86,46 @@ const RegistrationScreen = () => {
     return (
         <View style={styles.form}>
             <View>
-            <Text style={styles.label}>Create your account below:</Text>
-            <TextInput
-              style={styles.textInput}
-              onChangeText={ (value) => setRegistrationFirstName(value) }
-              autoCapitalize="none"
-              autoCorrect = {false}
-              autoCompleteType="name"
-              placeholder="First Name"
-            />
-            <TextInput
-              style={styles.textInput}
-              onChangeText={ (value) => setRegistrationLastName(value) }
-              autoCapitalize="none"
-              autoCorrect = {false}
-              autoCompleteType="name"
-              placeholder="Last Name"
-            />
-            <TextInput
-              style={styles.textInput}
-              onChangeText={ (value) => setRegistrationEmail(value) }
-              autoCapitalize="none"
-              autoCorrect = {false}
-              autoCompleteType="email"
-              keyboardType="email-address"
-              placeholder="email"
-            />
-            <TextInput
-              style={styles.textInput}
-              onChangeText={ (value) => setRegistrationPassword(value) }
-              autoCapitalize="none"
-              autoCorrect={false}
-              autoCompleteType= "password"
-              keyboardType="visible-password"
-              placeholder="password"
-              secureTextEntry = {true}
-            />
-            <Pressable style={styles.button} 
-            onPress={registerWithFirebase}>
-            <Text style={styles.text}>Register</Text>
-            </Pressable>
+              <Text style={styles.label}>Create your account below:</Text>
+              <TextInput
+                style={styles.textInput}
+                onChangeText={ (value) => setRegistrationFirstName(value) }
+                autoCapitalize="none"
+                autoCorrect = {false}
+                autoCompleteType="name"
+                placeholder="First Name"
+              />
+              <TextInput
+                style={styles.textInput}
+                onChangeText={ (value) => setRegistrationLastName(value) }
+                autoCapitalize="none"
+                autoCorrect = {false}
+                autoCompleteType="name"
+                placeholder="Last Name"
+              />
+              <TextInput
+                style={styles.textInput}
+                onChangeText={ (value) => setRegistrationEmail(value) }
+                autoCapitalize="none"
+                autoCorrect = {false}
+                autoCompleteType="email"
+                keyboardType="email-address"
+                placeholder="email"
+              />
+              <TextInput
+                style={styles.textInput}
+                onChangeText={ (value) => setRegistrationPassword(value) }
+                autoCapitalize="none"
+                autoCorrect={false}
+                autoCompleteType= "password"
+                keyboardType="visible-password"
+                placeholder="password"
+                secureTextEntry = {true}
+              />
+              <Pressable style={styles.button} 
+              onPress={registerWithFirebase}>
+              <Text style={styles.text}>Register</Text>
+              </Pressable>
           </View>
         </View>
     );
